@@ -1,17 +1,22 @@
 import React from 'react'
 
-class NumberNews extends React.Component{
+import {Link} from "react-router-dom";
+
+
+class NumberNews extends React.Component {
     render() {
-        return(
+        return (
             <section className="number_news">
                 <ul className="cols">
                     {
                         this.props.numberNews.map((post, index) => {
-                            return(
+                            return (
                                 <li key={index}>
-                                    <b>08</b>
-                                    <h6>{post.title}</h6>
-                                    <p>{post.description}</p>
+                                    <Link to={'number/' + post.id}>
+                                        <b>{Math.ceil(Math.random() * 10)}</b>
+                                        <h6>{post.title}</h6>
+                                        <p>{post.description}</p>
+                                    </Link>
                                 </li>
                             )
                         })
