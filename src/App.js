@@ -17,6 +17,9 @@ class App extends Component {
         super(props);
 
         this.state = {
+
+            moderate: false,
+
             menuTop: [
                 {url: '', name: 'Home'},
                 {url: 'research', name: 'Research'},
@@ -24,7 +27,36 @@ class App extends Component {
                 {url: 'industry', name: 'Industry & Innovation'},
             ],
 
+            quote: {
+                headerBoldQuote: 'College of Engineering',
+                quoteWithPhoto: 'Креатив, пренебрегая деталями, одновременно притягивает межличностный медиабизнес',
+            },
+
+
             content: {
+                mainNews: {
+                    title: 'The Carniegie Mellon University College of Engineering is...',
+                    description: 'Креатив, пренебрегая деталями, одновременно притягивает межличностный медиабизнес. Стратегия предоставления скидок и бонусов тормозит типичный побочный PR-эффект. Нестандартный подход продуцирует ролевой рекламоноситель. Ребрендинг ускоряет выставочный стенд, полагаясь на инсайдерскую информацию. Медийный канал изменяет повседневный CTR.',
+                },
+
+                twitterMini: {
+                    cover: 'https://images.unsplash.com/photo-1520328992549-c75d95b2a983?ixlib=rb-0.3.5&s=a7a2435d0ab85615ba35bc6a898a022a&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb',
+                    title: 'Общественный потребительский рынок: основные моменты',
+                    category: 'energy & environment',
+                    description: 'Креатив, пренебрегая деталями, одновременно притягивает межличностный медиабизнес. Стратегия предоставления скидок и бонусов тормозит типичный побочный PR-эффект. Нестандартный подход',
+                },
+
+                twitterBig: {
+                    cover: 'https://images.unsplash.com/photo-1497465541860-77f114a519d2?ixlib=rb-0.3.5&s=1fa185e4899ec824cc973ffaa823882c&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb',
+                    title: 'energy & environment',
+                    category: 'Общественный потребительский рынок: основные моменты',
+                },
+
+                bigNews: {
+                    title: 'Общественный потребительский рынок: основные моменты',
+                    description: 'CTR правомочен. Отсюда естественно следует, что ассортиментная политика предприятия трансформирует типичный медиаплан. Общество потребления переворачивает рейтинг. Conversion rate неоднозначен. Креатив, пренебрегая деталями, одновременно притягивает межличностный медиабизнес. Стратегия предоставления скидок и бонусов тормозит типичный побочный PR-эффект. Нестандартный подход продуцирует ролевой рекламоноситель. Ребрендинг ускоряет выставочный стенд, полагаясь на инсайдерскую информацию. Медийный канал изменяет повседневный CTR. Один из признанных классиков маркетинга Ф.Котлер определяет это так: построение бренда директивно концентрирует медийный канал. Информационная связь с потребителем регулярно усиливает портрет потребителя. Выставочный стенд сознательно уравновешивает культурный нестандартный подход.',
+                },
+
                 inlineNews: [
                     {
                         id: 1,
@@ -72,6 +104,21 @@ class App extends Component {
                         description: 'Креатив, пренебрегая деталями, одновременно притягивает межличностный медиабизнес. Стратегия предоставления скидок и бонусов тормозит типичный побочный PR-эффект.'
                     },
                 ],
+
+                education: {
+                    title: 'Типичный мониторинг активности глазами современников',
+                    description: 'Рыночная информация индуктивно консолидирует эмпирический портрет потребителя. Инвестиция, вопреки мнению П.Друкера, слабо стабилизирует бизнес-план, осознав маркетинг как часть производства. VIP-мероприятие, на первый взгляд, трансформирует комплексный сегмент рынка, осознав маркетинг как часть производства. Точечное воздействие конструктивно. По мнению ведущих маркетологов, концепция развития нейтрализует межличностный медиаплан, используя опыт предыдущих кампаний.'
+                },
+
+                industry: {
+                    title: 'Эмпирический медиамикс: гипотеза и теории',
+                    description: 'Рыночная информация индуктивно консолидирует эмпирический портрет потребителя. Инвестиция, вопреки мнению П.Друкера, слабо стабилизирует бизнес-план, осознав маркетинг как часть производства. VIP-мероприятие, на первый взгляд, трансформирует комплексный сегмент рынка, осознав маркетинг как часть производства. Точечное воздействие конструктивно. По мнению ведущих маркетологов, концепция развития нейтрализует межличностный медиаплан, используя опыт предыдущих кампаний.'
+                },
+
+                research: {
+                    title: 'Почему основан на анализе телесмотрения департамент маркетинга и продаж?',
+                    description: 'Рыночная информация индуктивно консолидирует эмпирический портрет потребителя. Инвестиция, вопреки мнению П.Друкера, слабо стабилизирует бизнес-план, осознав маркетинг как часть производства. VIP-мероприятие, на первый взгляд, трансформирует комплексный сегмент рынка, осознав маркетинг как часть производства. Точечное воздействие конструктивно. По мнению ведущих маркетологов, концепция развития нейтрализует межличностный медиаплан, используя опыт предыдущих кампаний.'
+                }
             }
 
         }
@@ -79,21 +126,42 @@ class App extends Component {
 
 
     render() {
+
         return (
             <div className="outside_wrapper">
                 <div className="inside_wrapper">
-                    <Navigation navigation={this.state.menuTop}/>
+                    <Navigation
+                        navigation={this.state.menuTop} />
                 </div>
 
                 <Switch>
-                    <Route exact path="/" component={Main}/>
+                    <Route exact path="/" render={(props) => (
+                        <Main {...props}
+                              headerBoldQuote={this.state.quote.headerBoldQuote}
+                              mainNews={this.state.content.mainNews}
+                              twitterMini={this.state.content.twitterMini}
+                              twitterBig={this.state.content.twitterBig}
+                              quoteWithPhoto={this.state.quote.quoteWithPhoto}
+                              inlineNews={this.state.content.inlineNews}
+                              bigNews={this.state.content.bigNews}
+                              numberNews={this.state.content.numberNews}
+                              menuBottom={this.state.menuTop}/>
+                    )}/>
                 </Switch>
 
                 <div className="inside_wrapper">
                     <Switch>
-                        <Route path="/research" component={Research}/>
-                        <Route path="/education" component={Education}/>
-                        <Route path="/industry" component={Industry}/>
+                        <Route path="/research" render={(props) => (
+                            <Research {...props} research={this.state.content.research}/>
+                        )}/>
+
+                        <Route path="/education" render={(props) => (
+                            <Education {...props} education={this.state.content.education}/>
+                        )}/>/>
+
+                        <Route path="/industry" render={(props) => (
+                            <Industry {...props} industry={this.state.content.industry}/>
+                        )}/>
 
                         <Route path="/news/:id" render={(props) => (
                             <FullInlineNews {...props} inlineNews={this.state.content.inlineNews}/>)}/>

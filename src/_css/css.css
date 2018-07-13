@@ -7,10 +7,6 @@
 *{margin:0;padding:0;border:0;outline-style:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-appearance:none;}
 body{width:100%;height:100%; background-color:#fff; font-family:"gothampro-regular",Arial,Helvetica,sans-serif;font-size:1vw;color:#292a2e;-webkit-font-smoothing:antialiased;}
 
-::selection{background:#ffff00;color:#292a2e;}
-::-moz-selection{background:#ffff00;color:#292a2e;}
-::-webkit-selection{background:#ffff00;color:#292a2e;}
-
 svg,img,iframe,video,audio{overflow:visible;vertical-align:middle;}
 a:link, a:visited{color:#183153;text-decoration:underline;}
 a:hover, a:hover.visited{text-decoration:none; color:#5389d3;}
@@ -148,11 +144,12 @@ div.big_news_flow h3 {margin-bottom:2.5vw;}
 div.big_news_flow p {color:#fff; column-count:3; text-align:left; column-gap:2vw;}
 
 section.number_news li {padding:1.5vw; display:block; background:#333; margin-bottom:2vw;}
-section.number_news b {display:block; font-size:4vw; letter-spacing:-.2vw; margin-bottom:2vw; color:#fff;}
+section.number_news b {display:block; font-size:4vw; letter-spacing:-.2vw; margin-bottom:2selectionvw; color:#fff;}
 section.number_news h6 {font-size:1vw; line-height:1.1vw;  color:#fff;}
 section.number_news p {font-size:.7vw;  color:#fff;}
 
 section.static h1 {font-size:4vw; line-height:3vw; margin-bottom:3vw;}
+section.static h6 {margin-bottom:3vw; letter-spacing: -.05vw; text-transform:uppercase;}
 
 div.fullstory h1 {font-size:4vw; line-height:3vw; margin-bottom:3vw;}
 div.fullstory b.category {text-transform:uppercase; display:block; margin-bottom:1vw;}
@@ -162,3 +159,7 @@ div.fullstory h6 a {text-decoration:none;}
 div.fullstory > ul.cols > li {vertical-align:top;}
 div.fullstory > ul.cols > li:first-child {width:400px; text-align:center;}
 div.fullstory > ul.cols > li:first-child b {font-size: 20vw; display:block; background:#252525; color:#dabe8f;}
+
+div.moderate {padding:1vw 1.2vw; background:#fff; position:fixed; top:0; -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.1); -moz-box-shadow: 0 0 30px 0 rgba(0,0,0,0.1); box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);}
+
+button.delete {border-radius:20px; padding:.5vw 5vw; font-size:.7vw; display:block; cursor:pointer; background:#fff; border:2px solid #fff176; right:0; float:right;  -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.03); -moz-box-shadow: 0 0 30px 0 rgba(0,0,0,0.03); box-shadow: 0 0 30px 0 rgba(0,0,0,0.03);}
