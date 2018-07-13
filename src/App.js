@@ -10,7 +10,6 @@ import FullInlineNews from "./components/news/FullInlineNews";
 import {Switch, Route} from "react-router-dom";
 import FullNumberNews from "./components/news/FullNumberNews";
 
-
 class App extends Component {
 
     constructor(props) {
