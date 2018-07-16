@@ -15,15 +15,15 @@ class Main extends React.Component {
             <div className="outside_wrapper">
                 <div className="inside_wrapper">
                     <header>
-                        <HeaderBoldQuote
-                            headerBoldQuote={this.props.headerBoldQuote}/>
+                        <HeaderBoldQuote quoteTop={this.props.quoteTop}/>
+
                         <MainNews mainNews={this.props.mainNews}/>
                     </header>
 
                     <TwitterFlow twitterMini={this.props.twitterMini}
                                  twitterBig={this.props.twitterBig}/>
 
-                    <QuoteWithPhoto quoteWithPhoto={this.props.quoteWithPhoto}/>
+                    <QuoteWithPhoto quoteCenter={this.props.quoteCenter}/>
 
                     <section className="news_list_inline">
                         <strong>Смотрите также</strong>

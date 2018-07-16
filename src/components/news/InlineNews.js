@@ -9,6 +9,7 @@ class InlineNews extends React.Component {
             this.props.inlineNews.map((post, index) => {
                 return (
                     <li key={index}>
+                        <br/>
                         <Link to={'news/' + post.id}>
                             <div className="content_list">
                                 <div className="news_cover">

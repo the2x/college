@@ -17,8 +17,6 @@ class App extends Component {
 
         this.state = {
 
-            moderate: false,
-
             menuTop: [
                 {url: '', name: 'Home'},
                 {url: 'research', name: 'Research'},
@@ -26,13 +24,12 @@ class App extends Component {
                 {url: 'industry', name: 'Industry & Innovation'},
             ],
 
-            quote: {
-                headerBoldQuote: 'College of Engineering',
-                quoteWithPhoto: 'Креатив, пренебрегая деталями, одновременно притягивает межличностный медиабизнес',
-            },
+            quoteTop: '— College of Engineering',
 
+            quoteCenter: 'The Carniegie Mellon University College of Engineering is...',
 
             content: {
+
                 mainNews: {
                     title: 'The Carniegie Mellon University College of Engineering is...',
                     description: 'Креатив, пренебрегая деталями, одновременно притягивает межличностный медиабизнес. Стратегия предоставления скидок и бонусов тормозит типичный побочный PR-эффект. Нестандартный подход продуцирует ролевой рекламоноситель. Ребрендинг ускоряет выставочный стенд, полагаясь на инсайдерскую информацию. Медийный канал изменяет повседневный CTR.',
@@ -120,9 +117,8 @@ class App extends Component {
                 }
             }
 
-        }
+        };
     }
-
 
     render() {
 
@@ -130,17 +126,17 @@ class App extends Component {
             <div className="outside_wrapper">
                 <div className="inside_wrapper">
                     <Navigation
-                        navigation={this.state.menuTop} />
+                        navigation={this.state.menuTop}/>
                 </div>
 
                 <Switch>
                     <Route exact path="/" render={(props) => (
                         <Main {...props}
-                              headerBoldQuote={this.state.quote.headerBoldQuote}
+                              quoteTop={this.state.quoteTop}
                               mainNews={this.state.content.mainNews}
                               twitterMini={this.state.content.twitterMini}
                               twitterBig={this.state.content.twitterBig}
-                              quoteWithPhoto={this.state.quote.quoteWithPhoto}
+                              quoteCenter={this.state.quoteCenter}
                               inlineNews={this.state.content.inlineNews}
                               bigNews={this.state.content.bigNews}
                               numberNews={this.state.content.numberNews}

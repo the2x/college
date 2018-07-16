@@ -12,7 +12,7 @@ class QuoteWithPhoto extends React.Component {
                     </li>
                     <li className="blank"></li>
                     <li>
-                        <strong>{this.props.quoteWithPhoto}</strong><br/>
+                        <strong>{this.props.quoteCenter}</strong><br/>
                         <i>Caroline Picard — CEO Engeniring Company</i>
                     </li>
                 </ul>
