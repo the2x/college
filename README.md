@@ -1,3 +1,3 @@
 React Template
 
-![...](https://downloader.disk.yandex.ru/preview/6950d151b3dcbd41163f60056ab0e1abf6e5e995dd83c44fe00dde126fe3b217/5b4cce55/F1qGYNBloOSmx9exaDyAJTf8ZAK-O9sEf7SPuH_8n-Um_yjOMPLoYo0uLS7snUJJVz91qp-0sJiOhkUdl1BaaA%3D%3D?uid=0&filename=cover_en.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&size=1920x896)
+![...](https://4.downloader.disk.yandex.by/disk/6bd6114a49a1b91255548ca1d4787b0d502a882e56e5353346ae387619ec02d4/5b4cf02d/F1qGYNBloOSmx9exaDyAJaen26E89F0bNsVPgFXh-Wc6uRFbyRIbG7FEPzG_OO9Yh4LnyLJtm3uLywfg8RaRfA%3D%3D?uid=502942489&filename=cover_en.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&fsize=276492&hid=e84f6727c4d6c424e39d679bedde5e1d&media_type=image&tknv=v2&etag=1a745eee8ff0d4d4acc199f598ce188c)
